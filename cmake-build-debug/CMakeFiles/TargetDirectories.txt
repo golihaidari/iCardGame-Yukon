@@ -1,0 +1,3 @@
+C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon/cmake-build-debug/CMakeFiles/yukon.dir
+C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon/cmake-build-debug/CMakeFiles/rebuild_cache.dir
