@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "yukon::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-yukon-Debug-1e6edc0978d07833f53c.json",
+					"jsonFile" : "target-yukon-Debug-b6882043fa7156be05b8.json",
 					"name" : "yukon",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon/cmake-build-debug",
-		"source" : "C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon"
+		"build" : "C:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug",
+		"source" : "C:/Users/golba/CLionProjects/yukon(final)"
 	},
 	"version" : 
 	{

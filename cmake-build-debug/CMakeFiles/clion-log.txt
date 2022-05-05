@@ -1,10 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.4/bin/ninja/win/ninja.exe" -G Ninja "C:\Users\golba\Desktop\DTU\2nd_semester\Machine oriented programming\git\iCardGame-Yukon"
--- The C compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
+"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.4/bin/ninja/win/ninja.exe" -G Ninja C:\Users\golba\CLionProjects\yukon(final)
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon/cmake-build-debug
+-- Build files have been written to: C:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug

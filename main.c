@@ -26,8 +26,7 @@ Card* searchData(Card* head,int r,int c);
 
 //----------------saveGame-------------------------
 void saveGame(char* pInput);
-bool saveFoundations(char* fName);
-bool saveColumns(char* cName);
+bool save(char* fileName, char* type);
 
 //--------------------play--------------------------
 void play(char* pInput);
@@ -400,9 +399,11 @@ void saveGame(char* pInput){
     char cName[20];
     char fName[20];
     strncpy(cName, (pInput+3),18);
-    bool cStatus= saveColumns(cName);
+    strcat(cName,"Columns.txt");
+    bool cStatus= save(cName, "columns");
     strncpy(fName, (pInput+3),18);
-    bool fStatus= saveFoundations(fName);
+    strcat(fName, "foundations.txt");
+    bool fStatus= save(fName, "foundations");
     if(cStatus == true && fStatus== true){
         strcpy(message,"Game saved successfully");
     }else{
@@ -410,81 +411,62 @@ void saveGame(char* pInput){
     }
 }
 
-bool saveColumns(char* cName){
-    strcat(cName,"Columns.txt");
+bool save(char* fileName, char* type){
     FILE * file;
-    if( access( cName, F_OK ) == 0 ) {
+    if( access( fileName, F_OK ) == 0 ) {
         // file exists
-        file = fopen(cName, "w+");
-    } else {
-        // file doesn't exist
-        file = fopen(cName, "w");
+        file = fopen(fileName, "w+");
     }
+    else {
+        // file doesn't exist
+        if(strcmp(type, "columns")== 0){
+            strcpy(fileName, "../cardsColumns.txt");
+        }else{
+            strcpy(fileName, "../cardsFoundations.txt");
+        }
 
-    if (file == NULL) {
-        //printf("file can't be created \n");
-        //return false;
-        strcpy(cName, "../cardsColumns.txt");
-        file = fopen(cName, "w");
+        file = fopen(fileName, "w");
         if (file == NULL){return false;}
     }
-    int skipC[7] = {0, 0, 0, 0, 0, 0, 0};
-    int rows = getMaxLength(columns);
-    for (int r = 0; r <= rows; r++) {
-        for (int c = 0; c < 7; c++) {
-            if (skipC[c] == 0) {
-                Card *data = searchData(columns[c], r, c);
-                if (data != NULL) {
-                    fputc(data->value, file);
-                    fputc(data->suit, file);
-                    fputs(" ",file);
-                    fputs(data->face, file);
-                } else {
-                    skipC[c] = 1;
+
+    if(strcmp(type, "columns") == 0){
+        int skipC[7] = {0, 0, 0, 0, 0, 0, 0};
+        int rows = getMaxLength(columns);
+        for (int r = 0; r <= rows; r++) {
+            for (int c = 0; c < 7; c++) {
+                if (skipC[c] == 0) {
+                    Card *data = searchData(columns[c], r, c);
+                    if (data != NULL) {
+                        fputc(data->value, file);
+                        fputc(data->suit, file);
+                        fputs(" ",file);
+                        fputs(data->face, file);
+                    } else {
+                        skipC[c] = 1;
+                    }
+                    fputc('\n', file);
                 }
-                fputc('\n', file);
             }
         }
     }
-    fclose(file);
-    return true;
-}
-
-bool saveFoundations(char* fName){
-    strcat(fName,"Foundations.txt");
-    FILE * file;
-    if( access( fName, F_OK ) == 0 ) {
-        // file exists
-        file = fopen(fName, "w+");
-    } else {
-        // file doesn't exist
-        file = fopen(fName, "w");
-    }
-
-    if (file == NULL) {
-        //printf("file can't be created \n");
-        //return false;
-        strcpy(fName, "../cardsFoundations.txt");
-        file = fopen(fName, "w");
-        if (file == NULL){return false;}
-    }
-    int f = 0;
-    while (f < 4) {
-        Card *current = foundations[f];
-        while (current != NULL) {
-            fputc(current->value, file);
-            fputc(current->suit, file);
+    else{
+        int f = 0;
+        while (f < 4) {
+            Card *current = foundations[f];
+            while (current != NULL) {
+                fputc(current->value, file);
+                fputc(current->suit, file);
+                fputc('\n', file);
+                current = current->next;
+            }
             fputc('\n', file);
-            current = current->next;
+            f++;
         }
-        fputc('\n', file);
-        f++;
     }
 
     fclose(file);
     return true;
 }
-
 
 //--------------------play--------------------------
 void play(char* pInput){

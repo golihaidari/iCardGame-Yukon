@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon/cmake-build-debug"
+			"value" : "c:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon"
+			"value" : "C:/Users/golba/CLionProjects/yukon(final)"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon/cmake-build-debug"
+			"value" : "C:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug"
 		},
 		{
 			"name" : "yukon_IS_TOP_LEVEL",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon"
+			"value" : "C:/Users/golba/CLionProjects/yukon(final)"
 		}
 	],
 	"kind" : "cache",

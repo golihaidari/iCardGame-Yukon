@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon
+# Install script for directory: C:/Users/golba/CLionProjects/yukon(final)
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/golba/Desktop/DTU/2nd_semester/Machine oriented programming/git/iCardGame-Yukon/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
