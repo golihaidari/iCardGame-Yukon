@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug"
+			"value" : "c:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/golba/CLionProjects/yukon(final)"
+			"value" : "C:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/yukon"
+			"value" : "C:/Program Files (x86)/iCardGame_Yukon"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "yukon"
+			"value" : "iCardGame_Yukon"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1086,7 +1086,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "yukon_BINARY_DIR",
+			"name" : "iCardGame_Yukon_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1095,10 +1095,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug"
+			"value" : "C:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon/cmake-build-debug"
 		},
 		{
-			"name" : "yukon_IS_TOP_LEVEL",
+			"name" : "iCardGame_Yukon_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1110,7 +1110,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "yukon_SOURCE_DIR",
+			"name" : "iCardGame_Yukon_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/golba/CLionProjects/yukon(final)"
+			"value" : "C:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon"
 		}
 	],
 	"kind" : "cache",

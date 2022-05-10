@@ -1,7 +1,6 @@
-
 cmake_minimum_required(VERSION 3.21)
-project(yukon C)
+project(iCardGame_Yukon C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(yukon main.c deck.c card.h )
+add_executable(iCardGame_Yukon main.c deck.c card.h )

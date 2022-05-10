@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: yukon
+# Project: iCardGame_Yukon
 # Configurations: Debug
 # =============================================================================
 
@@ -39,52 +39,52 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target yukon
+# Object build statements for EXECUTABLE target iCardGame_Yukon
 
 
 #############################################
-# Order-only phony target for yukon
+# Order-only phony target for iCardGame_Yukon
 
-build cmake_object_order_depends_target_yukon: phony || CMakeFiles/yukon.dir
+build cmake_object_order_depends_target_iCardGame_Yukon: phony || CMakeFiles/iCardGame_Yukon.dir
 
-build CMakeFiles/yukon.dir/main.c.obj: C_COMPILER__yukon_Debug C$:/Users/golba/CLionProjects/yukon(final)/main.c || cmake_object_order_depends_target_yukon
-  DEP_FILE = CMakeFiles\yukon.dir\main.c.obj.d
+build CMakeFiles/iCardGame_Yukon.dir/main.c.obj: C_COMPILER__iCardGame_Yukon_Debug C$:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon/main.c || cmake_object_order_depends_target_iCardGame_Yukon
+  DEP_FILE = CMakeFiles\iCardGame_Yukon.dir\main.c.obj.d
   FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\yukon.dir
-  OBJECT_FILE_DIR = CMakeFiles\yukon.dir
+  OBJECT_DIR = CMakeFiles\iCardGame_Yukon.dir
+  OBJECT_FILE_DIR = CMakeFiles\iCardGame_Yukon.dir
 
-build CMakeFiles/yukon.dir/deck.c.obj: C_COMPILER__yukon_Debug C$:/Users/golba/CLionProjects/yukon(final)/deck.c || cmake_object_order_depends_target_yukon
-  DEP_FILE = CMakeFiles\yukon.dir\deck.c.obj.d
+build CMakeFiles/iCardGame_Yukon.dir/deck.c.obj: C_COMPILER__iCardGame_Yukon_Debug C$:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon/deck.c || cmake_object_order_depends_target_iCardGame_Yukon
+  DEP_FILE = CMakeFiles\iCardGame_Yukon.dir\deck.c.obj.d
   FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\yukon.dir
-  OBJECT_FILE_DIR = CMakeFiles\yukon.dir
+  OBJECT_DIR = CMakeFiles\iCardGame_Yukon.dir
+  OBJECT_FILE_DIR = CMakeFiles\iCardGame_Yukon.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target yukon
+# Link build statements for EXECUTABLE target iCardGame_Yukon
 
 
 #############################################
-# Link the executable yukon.exe
+# Link the executable iCardGame_Yukon.exe
 
-build yukon.exe: C_EXECUTABLE_LINKER__yukon_Debug CMakeFiles/yukon.dir/main.c.obj CMakeFiles/yukon.dir/deck.c.obj
+build iCardGame_Yukon.exe: C_EXECUTABLE_LINKER__iCardGame_Yukon_Debug CMakeFiles/iCardGame_Yukon.dir/main.c.obj CMakeFiles/iCardGame_Yukon.dir/deck.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\yukon.dir
+  OBJECT_DIR = CMakeFiles\iCardGame_Yukon.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = yukon.exe
-  TARGET_IMPLIB = libyukon.dll.a
-  TARGET_PDB = yukon.exe.dbg
+  TARGET_FILE = iCardGame_Yukon.exe
+  TARGET_IMPLIB = libiCardGame_Yukon.dll.a
+  TARGET_PDB = iCardGame_Yukon.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\golba\CLionProjects\yukon(final)\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\golba\Desktop\yukonDeliver\iCardGame-Yukon\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -95,7 +95,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\golba\CLionProjects\yukon(final)\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\golba\CLionProjects\yukon(final) -BC:\Users\golba\CLionProjects\yukon(final)\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\golba\Desktop\yukonDeliver\iCardGame-Yukon\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\golba\Desktop\yukonDeliver\iCardGame-Yukon -BC:\Users\golba\Desktop\yukonDeliver\iCardGame-Yukon\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -105,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build yukon: phony yukon.exe
+build iCardGame_Yukon: phony iCardGame_Yukon.exe
 
 # =============================================================================
 # Folder targets.
@@ -113,9 +113,9 @@ build yukon: phony yukon.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug
+# Folder: C:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon/cmake-build-debug
 
-build all: phony yukon.exe
+build all: phony iCardGame_Yukon.exe
 
 # =============================================================================
 # Built-in targets

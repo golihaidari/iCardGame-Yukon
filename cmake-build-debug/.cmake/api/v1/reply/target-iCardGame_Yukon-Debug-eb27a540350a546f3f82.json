@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "yukon.exe"
+			"path" : "iCardGame_Yukon.exe"
 		},
 		{
-			"path" : "yukon.pdb"
+			"path" : "iCardGame_Yukon.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -60,7 +60,7 @@
 			]
 		}
 	],
-	"id" : "yukon::@6890427a1f51a3e7e1df",
+	"id" : "iCardGame_Yukon::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -80,8 +80,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "yukon",
-	"nameOnDisk" : "yukon.exe",
+	"name" : "iCardGame_Yukon",
+	"nameOnDisk" : "iCardGame_Yukon.exe",
 	"paths" : 
 	{
 		"build" : ".",

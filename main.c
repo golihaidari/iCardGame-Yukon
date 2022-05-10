@@ -8,7 +8,7 @@
 #include <time.h>
 
 enum flag  {All, None, Standard,Default};
-enum Phase { STARTUP, PLAYING, Exit };
+enum Phase { STARTUP, PLAYING, RESTART, Exit };
 enum Deck {Shuffled, UnShuffled};
 enum Command {LD, SW, SL, SR, SD, QQ, P, Q,Invalid};
 void run();
@@ -63,32 +63,51 @@ int main() {
 
 //-------------------------------------------------------implementation---------------------------------------------------
 void run(){
-    show(Default);
-    phase= STARTUP;
-    char pInput[20];
-    strcpy(pInput," ");
+    phase = STARTUP;
     while(phase != Exit) {
-        printf("Last Command: %s\n", pInput);
-        printf("Message: %s\n", message);
-        printf("Input:");
-        gets(pInput);
-        cmd=  convert(pInput);
-        switch (cmd) {
-            case LD:    loadGame(pInput);
-                break;
-            case SW:    show(All); strcpy(message,"Ok");
-                break;
-            case SL:
-            case SR:    unShuffledDeck= loadDeck(unShuffledDeck); shuffleCards(pInput); load(Shuffled); show(Standard);
-                break;
-            case SD:    saveGame(pInput); show(Standard);
-                break;
-            case QQ:    phase= Exit;
-                break;
-            case P:     phase= PLAYING; strcpy(message, "Playing_Phase"); play(pInput);
-                break;
-            default:    strcpy(message, "Invalid STARTUP_Phase Command.");
-                break;
+        emptyColumnsFoundations();
+        show(Default);
+        phase = STARTUP;
+        char pInput[20];
+        strcpy(pInput, " ");
+        while (phase == STARTUP) {
+            enum Command lastCommand= convert(pInput);
+            printf("Last Command: %s\n", pInput);
+            printf("Message: %s\n", message);
+            printf("Input:");
+            gets(pInput);
+            cmd = convert(pInput);
+
+            switch (cmd) {
+                case LD:
+                    loadGame(pInput);
+                    break;
+                case SW:
+                    show(All);
+                    strcpy(message, "Ok");
+                    break;
+                case SL:
+                case SR:
+                    unShuffledDeck = loadDeck(unShuffledDeck);
+                    shuffleCards(pInput);
+                    load(Shuffled);
+                    show(Standard);
+                    break;
+                case SD:
+                    saveGame(pInput);
+                    show(Standard);
+                    break;
+                case QQ:
+                    phase = Exit;
+                    break;
+                case P:
+                    if(lastCommand == Q){ phase = RESTART; strcpy(message, "Game restarted"); }
+                    else{ phase = PLAYING; strcpy(message, "Playing_Phase"); play(pInput);}
+                    break;
+                default:
+                    strcpy(message, "Invalid STARTUP_Phase Command."); show(Standard);
+                    break;
+            }
         }
     }
 }
@@ -396,8 +415,8 @@ Card* searchData(Card* head,int r,int c)
 
 //----------------saveGame-------------------------
 void saveGame(char* pInput){
-    char cName[20];
-    char fName[20];
+    char cName[20]={ };
+    char fName[20]={ };
     strncpy(cName, (pInput+3),18);
     strcat(cName,"Columns.txt");
     bool cStatus= save(cName, "columns");
@@ -419,6 +438,10 @@ bool save(char* fileName, char* type){
     }
     else {
         // file doesn't exist
+        file = fopen(fileName, "w");
+    }
+
+    if (file == NULL){
         if(strcmp(type, "columns")== 0){
             strcpy(fileName, "../cardsColumns.txt");
         }else{
@@ -482,7 +505,8 @@ void play(char* pInput){
             getchar();
             phase= STARTUP;
             strcpy(message, "moved In STARTUP_Phase.");
-        } else {
+        }
+        else {
             char from[2];
             char to[2];
             char cardName[2];

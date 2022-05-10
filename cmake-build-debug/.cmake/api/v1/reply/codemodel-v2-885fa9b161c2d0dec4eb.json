@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "yukon",
+					"name" : "iCardGame_Yukon",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "yukon::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-yukon-Debug-b6882043fa7156be05b8.json",
-					"name" : "yukon",
+					"id" : "iCardGame_Yukon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iCardGame_Yukon-Debug-eb27a540350a546f3f82.json",
+					"name" : "iCardGame_Yukon",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/golba/CLionProjects/yukon(final)/cmake-build-debug",
-		"source" : "C:/Users/golba/CLionProjects/yukon(final)"
+		"build" : "C:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon/cmake-build-debug",
+		"source" : "C:/Users/golba/Desktop/yukonDeliver/iCardGame-Yukon"
 	},
 	"version" : 
 	{
